@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Neves Silva | Desenvolvedor Backend & Sistemas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas de Fundo -->
+    <div id="particles-js"></div>
+
+    <!-- Overlay de Ruído -->
+    <div class="noise-overlay"></div>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">GNS<span class="blink">_</span></span>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Quem Sou</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#qualifications" class="nav-link">Qualificações</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-button red"></span>
+                            <span class="terminal-button yellow"></span>
+                            <span class="terminal-button green"></span>
+                        </div>
+                        <div class="terminal-title">terminal@gustavo:~</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="line">
+                            <span class="prompt">$</span>
+                            <span class="command" id="typing-text">whoami</span>
+                        </div>
+                        <div class="line response">
+                            <span class="text-highlight">Gustavo Neves Silva</span>
+                        </div>
+                        <div class="line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat profile.txt</span>
+                        </div>
+                        <div class="line response">
+                            <p>Desenvolvedor Backend & Sistemas</p>
+                            <p>Especialista em Python, Linux, Windows Server</p>
+                            <p>Entusiasta de Segurança e Hacking Ético</p>
+                        </div>
+                        <div class="line">
+                            <span class="prompt">$</span>
+                            <span class="command">./connect.sh</span>
+                        </div>
+                        <div class="line response">
+                            <p>Iniciando conexão...</p>
+                        </div>
+                        <div class="line">
+                            <span class="prompt blink">$</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">Descubra Mais</a>
+                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text" data-text="Quem Sou">Quem Sou</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">Sou um jovem profissional apaixonado pela área de tecnologia da informação, com um forte desejo de aplicar e aprimorar minhas habilidades em um ambiente dinâmico e desafiador. Busco uma oportunidade como iniciante, comprometido em trabalhar com integridade e exceder expectativas.</p>
+                    <p class="about-description">Atualmente, sou estudante de Engenharia da Computação, focado em desenvolvimento backend, sistemas operacionais e segurança da informação. Valorizo a colaboração com colegas, o atendimento de clientes e o impacto positivo na comunidade.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Engenharia da Computação</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experiência em Controle de Acesso</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <span>Desenvolvimento Backend</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Segurança e Hacking Ético</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-glitch-effect">
+                            <!-- Placeholder para imagem de perfil -->
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text" data-text="Habilidades">Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Sistemas Operacionais</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <h4>Linux</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <h4>Windows</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Windows Server</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Programação</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>C#</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Segurança & Administração</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-user-secret"></i>
+                            </div>
+                            <h4>Ethical Hacking</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <h4>Bash/PowerShell</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h4>System Config</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Qualificações -->
+    <section id="qualifications" class="qualifications-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text" data-text="Qualificações">Qualificações</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="qualifications-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Engenharia da Computação</h3>
+                            <p class="timeline-date">Em andamento</p>
+                            <p class="timeline-description">Estudante de Engenharia da Computação com foco em desenvolvimento de sistemas e segurança da informação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Porteiro - Controlador de Acesso</h3>
+                            <p class="timeline-date">Dez 2023 - Mai 2024</p>
+                            <p class="timeline-description">Grupo Engeseg, São José dos Campos, SP</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Python: Object Oriented Programming</h3>
+                            <p class="timeline-date">Udemy</p>
+                            <p class="timeline-description">Desenvolvimento avançado em Python com foco em programação orientada a objetos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Web Ethical Hacking Bug Bounty Course</h3>
+                            <p class="timeline-date">Udemy</p>
+                            <p class="timeline-description">Técnicas avançadas de hacking ético e segurança web.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Mastering Active Directory: Administration and Fundamentals</h3>
+                            <p class="timeline-date">Udemy</p>
+                            <p class="timeline-description">Administração e configuração de Active Directory em ambientes Windows Server.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Server Infrastructure Basics</h3>
+                            <p class="timeline-date">Udemy</p>
+                            <p class="timeline-description">Fundamentos de infraestrutura de servidores e administração de sistemas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>ICBEU English Course (C1)</h3>
+                            <p class="timeline-date">ICBEU - Idiomas</p>
+                            <p class="timeline-description">Proficiência avançada em inglês (nível C1).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Mais Certificações</h3>
+                            <p class="timeline-description">Diversas certificações adicionais em linguagens de programação, modelagem de dados e análise.</p>
+                            <a href="#" class="btn-small">Ver todas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text" data-text="Projetos">Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-content">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>College List</h3>
+                        <p>Projeto acadêmico desenvolvido durante a faculdade.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Neves-Gustavo/college-list" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Projetos de Segurança</h3>
+                        <p>Experimentos e ferramentas relacionadas a segurança e hacking ético.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Segurança</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Neves-Gustavo" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-server"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Configuração de Servidores</h3>
+                        <p>Documentação e scripts para configuração e administração de servidores.</p>
+                        <div class="project-tags">
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Neves-Gustavo" target="_blank" class="btn-small">
+                                <i class="fab fa-github"></i> Ver no GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="https://github.com/Neves-Gustavo" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Ver Todos os Projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="glitch-text" data-text="Contato">Contato</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Estou disponível para esclarecer dúvidas sobre minhas qualificações, experiências e conceitos técnicos. Sinta-se à vontade para me contatar para mais informações.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@exemplo.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São José dos Campos, SP</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/gustavo-neves-silva16/" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/Neves-Gustavo" target="_blank">GitHub</a>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/gustavo_augusto_7_silva/" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="terminal-button red"></span>
+                                <span class="terminal-button yellow"></span>
+                                <span class="terminal-button green"></span>
+                            </div>
+                            <div class="terminal-title">contact@gustavo:~</div>
+                        </div>
+                        <div class="terminal-body">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <span class="prompt">$</span> Nome:
+                                    </label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        <span class="prompt">$</span> Email:
+                                    </label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">
+                                        <span class="prompt">$</span> Mensagem:
+                                    </label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="prompt">$</span> ./enviar.sh
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">GNS<span class="blink">_</span></span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Neves-Gustavo" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gustavo-neves-silva16/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/gustavo_augusto_7_silva/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Gustavo Neves Silva. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
